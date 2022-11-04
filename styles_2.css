@@ -1,0 +1,147 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    color: black;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(white,rgb(211, 255, 255),white);
+    background-size: cover;
+    background-position: center; 
+}
+.container{
+    padding: 15px 5%;
+
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 540px;
+
+}
+
+nav ul li { 
+    display: inline-block;
+    list-style: none;
+    margin: 15px 55px;
+
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300;
+    position: relative;
+}
+nav ul li a::after {        
+        content: "";
+        width: 0%;
+        height: 3px;
+        background: #7a41ff;
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        transition: 0.5s;
+    
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.header-text{
+    margin-top: 0%;
+    text-align: center;
+    font-size: 35px;
+}
+.header-text h1{
+    font-size: 35px;
+    margin-top: 5px;
+}
+.header-text h1 span{
+    color:#1700eb;
+}
+/*------Separador----->*/
+#about{
+    padding: 80px 0;
+    color: rgb(194, 255, 247);
+    font-size: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.plac1 img{
+    width: 450px;   
+}
+.plac2 img{
+    width: 450px;   
+}
+.plac3 img{
+    margin-top: 40px;
+    width: 850px;   
+}
+
+/*------------ Responsive -------*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+  .header-text{
+    margin-top: 40%;
+    font-size: 16px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .logo{
+    width: 360px;
+  }
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+    }
+  nav ul{
+    background: rgb(0, 40, 43);
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    transition: right 0.7s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px; 
+  }
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px; 
+    left: 25px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+   }
+   .plac1 img{
+    width: 250px;   
+}
+.plac2 img{
+    width: 250px;   
+}
+.plac3 img{
+    margin-top: 40px;
+    width: 550px;   
+}

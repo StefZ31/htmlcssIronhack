@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Ursus Design - Stef</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles_2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src='https://i.imgur.com/NjhVKru.png' class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ursus.html">Ursus</a></li>
+                    <li><a href="workshop.html">Workshop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+             </nav>
+            <div class="header-text">
+                <h1>GFX Design and logo <span>Portfolio</span></h1>
+            </div>
+        </div>
+        <!------Separador----->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="plac1">
+                        <img src='https://i.imgur.com/hEAQoIR.png'>
+                    </div>
+                    <div class="plac2">
+                        <img src='https://i.imgur.com/iKEAR1o.png'>
+                    </div>
+                    <div class="plac3">
+                        <img src='https://i.imgur.com/7xtGsGX.png'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----JavaScript for the menus on responsive-->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
